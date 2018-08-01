@@ -1,0 +1,9 @@
+
+.idea*
+*.iml
+modules.xml
+*.class
+*.log
+*.jar
+hs_err_pid*
+target/

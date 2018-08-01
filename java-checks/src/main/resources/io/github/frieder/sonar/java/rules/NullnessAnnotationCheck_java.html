@@ -1,0 +1,25 @@
+<p>
+    Make sure not to use any nullable annotations besides those provided by the Checker Framework.
+</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+import javax.annotation.Nonnull;
+
+class MyClass {
+    @Nonnull
+    private Object field;
+
+    ...
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+import org.checkerframework.checker.nullness.qual.NonNull;
+
+class MyClass {
+    @NonNull
+    private Object field;
+
+    ...
+}
+</pre>
