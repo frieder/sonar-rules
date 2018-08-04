@@ -1,5 +1,5 @@
 {
-  "title": "Nullable Return Check",
+  "title": "Vavr Public Signature Check",
   "type": "CODE_SMELL",
   "status": "ready",
   "remediation": {
@@ -7,7 +7,7 @@
     "constantCost": "10min"
   },
   "tags": [
-    "npe"
+    "vavr"
   ],
-  "defaultSeverity": "Info"
+  "defaultSeverity": "Major"
 }

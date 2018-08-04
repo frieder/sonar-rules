@@ -22,7 +22,7 @@
                 <groupId>org.sonarsource.sonar-packaging-maven-plugin</groupId>
                 <artifactId>sonar-packaging-maven-plugin</artifactId>
                 <configuration>
-                    <pluginKey>stmn-rules</pluginKey>
+                    <pluginKey>custom-sonar-java-rules</pluginKey>
                     <pluginClass>io.github.frieder.sonar.java.SonarPlugin</pluginClass>
                     <pluginName>${project.name}</pluginName>
                     <pluginDescription>${project.description}</pluginDescription>

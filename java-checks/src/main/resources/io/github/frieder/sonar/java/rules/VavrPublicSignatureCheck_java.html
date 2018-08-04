@@ -1,0 +1,18 @@
+<p>
+    Do not use <code>vavr.io.collection.*</code> in public API. Use regular <code>java.util.*</code>
+    classes instead.
+</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+interface MyIface {
+    io.vavr.collection.List&lt;String> func1();
+    void func2(io.vavr.collection.Map&lt;String,Object> param);
+}
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+interface MyIface {
+    java.util.List&lt;String> func1();
+    void func2(java.util.Map&lt;String,Object) param);
+}
+</pre>
