@@ -6,7 +6,6 @@ use of custom rules in SonarQube.
 *  `NullableReturnCheck` - Shows an issue on `INFO` level to the developer suggesting
 to consider using `java.util.Optional` or `io.vavr.control.Option` instead of a potentially 
 nullable return value.
-a nullable return value.
 * `NullnessAnnotationCheck` - Forbid the use of any nullness annotations besides those
 of the [Checker Framework](https://checkerframework.org/). We consider this the best
 solution when it comes to nullable annotations at the moment and made it an important 
