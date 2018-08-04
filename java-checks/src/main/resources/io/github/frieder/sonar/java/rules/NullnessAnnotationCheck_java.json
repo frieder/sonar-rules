@@ -4,7 +4,7 @@
   "status": "ready",
   "remediation": {
     "func": "Constant\/issue",
-    "constantCost": "20min"
+    "constantCost": "10min"
   },
   "tags": [
     "npe"
