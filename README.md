@@ -10,7 +10,8 @@ the visitor pattern available in Sonar.
 * `NullnessAnnotationCheck` - Forbids the use of any nullness annotations 
 besides those of the [Checker Framework](https://checkerframework.org/). The 
 rule itself is marked _deprecated_. There is a more generic approach 
-available that does not require a custom rule -- [rule templates](wiki/RuleTemplate). 
+available that does not require a custom rule -- 
+[rule templates](https://github.com/frieder/sonar-rules/wiki/RuleTemplate). 
 * `VavrPublicSignatureCheck` - Forbid the use of [vavr.io](https://www.vavr.io) 
 classes in public API. This includes public/protected methods used in 
 interfaces and abstract classes. 
