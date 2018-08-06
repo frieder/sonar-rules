@@ -12,15 +12,15 @@ import java.util.List;
 
 /**
  * Whenever an interface or an abstract class has public/protected methods check that neither
- * the parameter types nor the return type are of type vavr.io.collection.*. The reason behind
- * this is that the vavr classes use the exact same name as the regular Java collection classes
- * which might lead to confusion when not being careful. Also we'd like to keep the interfaces
- * to be as generic as possible. Use of vavr for internal implementation is still possible.
+ * the parameter types nor the return type are of type vavr.io.*. The reason behind this rule
+ * is that we would like to keep the interfaces as generic as possible. Vavr.io is not commonly
+ * used so we do not want to force others to use it just to implement public APIs. The use of
+ * vavr for internal implementations is still possible.
  */
 @Rule(key = "VavrPublicSignatureCheck")
 public class VavrPublicSignatureCheck extends IssuableSubscriptionVisitor {
     private static final String MSG = "Invalid use of vavr classes";
-    private static final String VAVR_PKG = "io.vavr.collection";
+    private static final String VAVR_PKG = "io.vavr";
     private boolean isIfaceOrAbstract;
 
 

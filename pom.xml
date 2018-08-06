@@ -9,6 +9,13 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
     <properties>
         <sonar.version>6.7.4</sonar.version>
         <sonar.java.version>5.4.0.14284</sonar.java.version>
@@ -56,9 +63,10 @@
                     <configuration>
                         <sonarLintSupported>true</sonarLintSupported>
                         <sonarQubeMinVersion>${sonar.version}</sonarQubeMinVersion>
-                        <pluginUrl>https://github.com/frieder/sonar-rules</pluginUrl>
                         <requirePlugins>java:${sonar.java.version}</requirePlugins>
-                        <sonarLintSupported>true</sonarLintSupported>
+                        <pluginUrl>https://github.com/frieder/sonar-rules</pluginUrl>
+                        <pluginSourcesUrl>https://github.com/frieder/sonar-rules</pluginSourcesUrl>
+                        <pluginIssueTrackerUrl>https://github.com/frieder/sonar-rules/issues</pluginIssueTrackerUrl>
                     </configuration>
                 </plugin>
             </plugins>

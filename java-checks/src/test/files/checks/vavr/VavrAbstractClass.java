@@ -15,7 +15,7 @@ public abstract class VavrAbstractClass {
 
     public abstract void func4(Map<String, Object> map);
 
-    public abstract Option<String> func5();
+    public abstract Option<String> func5(); // Noncompliant
 
     protected abstract void func6(io.vavr.collection.List<Object> list); // Noncompliant
 
@@ -25,6 +25,22 @@ public abstract class VavrAbstractClass {
 
     protected abstract void func9(Map<String, Object> map);
 
-    protected abstract Option<String> func10();
+    protected abstract Option<String> func10(); // Noncompliant
+
+    private void func11(io.vavr.collection.List<Object> list) {
+    }
+
+    private void func12(io.vavr.collection.Map<String, Object> map) {
+    }
+
+    private void func13(List<Object> list) {
+    }
+
+    private void func14(Map<String, Object> map) {
+    }
+
+    private Option<String> func15() {
+        return Option.of("");
+    }
 
 }

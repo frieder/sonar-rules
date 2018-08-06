@@ -26,7 +26,6 @@
                     <pluginClass>io.github.frieder.sonar.java.SonarPlugin</pluginClass>
                     <pluginName>${project.name}</pluginName>
                     <pluginDescription>${project.description}</pluginDescription>
-                    <sonarLintSupported>true</sonarLintSupported>
                 </configuration>
             </plugin>
             <plugin>
