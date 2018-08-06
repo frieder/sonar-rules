@@ -15,6 +15,6 @@ public interface VavrInterface {
 
     void func4(Map<String, Object> map);
 
-    Option<String> func5();
+    Option<String> func5(); // Noncompliant
 
 }

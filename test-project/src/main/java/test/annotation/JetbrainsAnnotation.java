@@ -1,23 +1,28 @@
 package test.annotation;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SuppressWarnings("unused")
-class JavaxAnnotations {
-    @Nonnull
+public class JetbrainsAnnotation {
+    @NotNull
     private String field1;
     @Nullable
     private String field2;
 
     @SuppressWarnings("unused")
-    public JavaxAnnotations(@Nonnull String param1, @Nullable String param2) {
+    public JetbrainsAnnotation(@NotNull String param1, @Nullable String param2) {
         field1 = param1;
         field2 = param2;
     }
 
     @SuppressWarnings("unused")
-    private @Nonnull Object func1() {
+    private @NotNull Object func1() {
+        @SuppressWarnings({"squid:S1854", "squid:S1481"})
+        List<@NotNull String> list = new ArrayList<>();
         field1 = "Hello " + field1;
         return new Object();
     }
